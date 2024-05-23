@@ -21,7 +21,6 @@ package auth
 
 import (
 	"context"
-	"crypto/tls"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -49,13 +48,9 @@ var httpClient *http.Client
 
 // Init function for the package
 func init() {
-	tr := &http.Transport{
-		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
-	}
 	// Create a HTTP client with a timeout
 	httpClient = &http.Client{
-		Transport: tr,
-		Timeout:   fetchTimeout * time.Second,
+		Timeout: fetchTimeout * time.Second,
 	}
 }
 
