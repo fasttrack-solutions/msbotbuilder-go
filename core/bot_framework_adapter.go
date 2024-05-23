@@ -24,10 +24,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/infracloudio/msbotbuilder-go/connector/auth"
-	"github.com/infracloudio/msbotbuilder-go/connector/client"
-	"github.com/infracloudio/msbotbuilder-go/core/activity"
-	"github.com/infracloudio/msbotbuilder-go/schema"
+	"github.com/fasttrack-solutions/msbotbuilder-go/connector/auth"
+	"github.com/fasttrack-solutions/msbotbuilder-go/connector/client"
+	"github.com/fasttrack-solutions/msbotbuilder-go/core/activity"
+	"github.com/fasttrack-solutions/msbotbuilder-go/schema"
 	"github.com/pkg/errors"
 )
 

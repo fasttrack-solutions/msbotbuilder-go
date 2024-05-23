@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/infracloudio/msbotbuilder-go/core"
-	"github.com/infracloudio/msbotbuilder-go/core/activity"
-	"github.com/infracloudio/msbotbuilder-go/schema"
+	"github.com/fasttrack-solutions/msbotbuilder-go/core"
+	"github.com/fasttrack-solutions/msbotbuilder-go/core/activity"
+	"github.com/fasttrack-solutions/msbotbuilder-go/schema"
 )
 
 var customHandler = activity.HandlerFuncs{

@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/fasttrack-solutions/msbotbuilder-go/connector/cache"
+	"github.com/fasttrack-solutions/msbotbuilder-go/schema"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/infracloudio/msbotbuilder-go/connector/cache"
-	"github.com/infracloudio/msbotbuilder-go/schema"
 	"github.com/lestrrat-go/jwx/jwk"
 )
 
