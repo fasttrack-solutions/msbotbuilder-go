@@ -23,6 +23,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"net/http"
 	"regexp"
 	"strings"
@@ -188,7 +189,7 @@ type metadata struct {
 func (jv JwtTokenValidator) getJwkURL(metadataURL string) (string, error) {
 	response, err := httpClient.Get(metadataURL)
 	if err != nil {
-		return "", errors.New("Error getting metadata document")
+		return "", fmt.Errorf("Error getting metadata document err: %v", err)
 	}
 
 	data := metadata{}
